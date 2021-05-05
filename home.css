@@ -1,0 +1,146 @@
+body {
+  font-family: 'Itim', cursive;
+  background-color: #fff;
+  margin: 0px;
+  border: 0px;
+}
+
+/* Navbar */
+
+#navbar {
+  position: fixed;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 5px;
+  z-index: 5;
+  background: rgba(0, 0, 0, 0.5);
+}
+#navbar a {
+  color: #68E1CD;
+  border-radius: 5px;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 4px;
+  transition: 0.5s;
+}
+#navbar a:hover {
+  color: white;
+  --nav-hov-col: #68E1CD;
+  background-color: var(--nav-hov-col);
+  box-shadow: 0 0 5px var(--nav-hov-col),
+              0 0 25px var(--nav-hov-col),
+              0 0 50px var(--nav-hov-col),
+              0 0 100px var(--nav-hov-col);
+}
+
+/* Profile Section */
+
+#welcome-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(#375C56, #1BA891);
+}
+#profile-image {
+  width: 30vh;
+  border-radius: 50%;
+  animation-name: float;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+@keyframes float {
+  0% {
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0.2);
+  }
+  25% {
+    box-shadow: 10px -10px 0 rgba(0, 0, 0, 0.2);
+  }
+  50% {
+    box-shadow: 0px 10px 0 rgba(0, 0, 0, 0.2);
+  }
+  75% {
+    box-shadow: -20px -10px 0 rgba(0, 0, 0, 0.2);
+  }
+}
+#web-emoji:hover:after {
+  visibility: visible;
+  content: "web";
+}
+#snake-emoji:hover:after {
+  content: "Python";
+}
+
+/* Projects */
+
+#projects {
+  display: flex;
+  padding: 20px 0px;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(0deg, #D16290, #B81F5F);
+}
+#project-tiles {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.project-tile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+}
+.project-name {
+  text-decoration: none;
+  text-align: center;
+}
+@media (max-width: 700px) {
+  #project-tiles {
+    flex-wrap: nowrap;
+  }
+}
+
+/* Conncetion page */
+
+#connect {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(#1F82B8, #175E85)
+}
+.profile-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-decoration: none;
+}
+.profile-link {
+  text-decoration: none;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border: solid 3px rgba(0, 0, 0, 0);
+  
+}
+.github-profile-link:hover {
+  color: white;
+  border-color: #1e2228;
+}
+.twitter-profile-link:hover {
+  color: white;
+  border-color: #1da1f2;
+}
+.fcc-profile-link:hover {
+  color: #0a0a23;
+  border-color: #f5f6f7
+}
