@@ -5,7 +5,7 @@ body {
   background-attachment: fixed;
   font-family: 'Noto Sans JP', sans-serif;
   display: flex;
-  background: linear-gradient(#7abed1, #9BD7D5);
+  background: white;
   justify-content: center;
 }
 main {
