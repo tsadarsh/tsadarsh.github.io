@@ -1,0 +1,34 @@
+# Sample projects data
+# Add your projects here in YAML format
+# Example format shown below - customize with your actual projects
+
+- title: "Project One"
+  description: "Brief description of your first project. What problem does it solve? What technologies did you use?"
+  tags:
+    - Python
+    - Web
+  links:
+    - label: "GitHub"
+      url: "https://github.com/tsadarsh/project-one"
+    - label: "Demo"
+      url: "#"
+
+- title: "Project Two"
+  description: "Another interesting project you've worked on. Include what you learned and the impact it had."
+  tags:
+    - Computer Vision
+    - OpenCV
+  links:
+    - label: "GitHub"
+      url: "https://github.com/tsadarsh/project-two"
+
+- title: "Project Three"
+  description: "A third example project to showcase your diverse skill set and interests."
+  tags:
+    - Docker
+    - Azure
+  links:
+    - label: "GitHub"
+      url: "https://github.com/tsadarsh/project-three"
+    - label: "Blog Post"
+      url: "/blog/"

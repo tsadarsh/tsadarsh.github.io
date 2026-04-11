@@ -1,0 +1,23 @@
+<footer class="main-footer">
+  <div class="social-links">
+    {% if site.github_username %}
+      <a href="https://github.com/{{ site.github_username }}" target="_blank" title="GitHub">
+        <img src="https://img.icons8.com/material-outlined/24/000000/github.png" alt="GitHub">
+      </a>
+    {% endif %}
+    
+    {% if site.linkedin_username %}
+      <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}/" target="_blank" title="LinkedIn">
+        <img src="https://img.icons8.com/material-outlined/24/000000/linkedin.png" alt="LinkedIn">
+      </a>
+    {% endif %}
+    
+    {% if site.instagram_username %}
+      <a href="https://www.instagram.com/{{ site.instagram_username }}/" target="_blank" title="Instagram">
+        <img src="https://img.icons8.com/material-outlined/24/000000/instagram-new.png" alt="Instagram">
+      </a>
+    {% endif %}
+  </div>
+  
+  <p class="footer-text">&copy; {{ 'now' | date: '%Y' }} {{ site.title }}. All rights reserved.</p>
+</footer>

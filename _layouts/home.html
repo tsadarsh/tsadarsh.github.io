@@ -1,0 +1,15 @@
+---
+layout: default
+---
+
+<section class="home-section">
+  <img id="profile-img" src="/assets/images/profile.png" alt="Adarsh TS">
+  
+  <h1>{{ site.title | split: ' - ' | first }}</h1>
+  
+  <p class="tagline">{{ site.tagline }}</p>
+  
+  <div class="intro">
+    {{ content }}
+  </div>
+</section>

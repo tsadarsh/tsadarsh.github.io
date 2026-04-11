@@ -1,0 +1,51 @@
+# Site configuration
+title: tsadarsh - Adarsh TS
+tagline: Software Developer | Maker | Computer Vision Enthusiast
+description: Portfolio and blog of Adarsh TS, a software developer passionate about Python, web development, and robotics.
+url: https://tsadarsh.github.io
+baseurl: ""
+github_username: tsadarsh
+linkedin_username: tsadarsh
+instagram_username: tsadarsh_me
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+theme: null
+
+# Exclude from build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - node_modules/
+  - .gitignore
+
+# Collections
+collections:
+  posts:
+    output: true
+    permalink: /blog/:title/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      category: "blog"
+  - scope:
+      path: "pages"
+      type: "pages"
+    values:
+      layout: "page"
+
+# Plugins (GitHub Pages safe)
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Future posts
+future: true
