@@ -2,16 +2,18 @@
 # Add your projects here in YAML format
 # Example format shown below - customize with your actual projects
 
-- title: "Project One"
-  description: "Brief description of your first project. What problem does it solve? What technologies did you use?"
+- title: "Pressure Injury Prevention System (PIPS 2.0)"
+  description: "An advanced IoT system for continuous patient monitoring integrating smart fabric sensors, ESP32 acquisition boards, and Python backend with compensation algorithms and Firebase integration."
   tags:
+    - PCB Design
+    - ESP32
     - Python
-    - Web
+    - IoT
+    - Firmware
+    - Firebase
   links:
-    - label: "GitHub"
-      url: "https://github.com/tsadarsh/project-one"
-    - label: "Demo"
-      url: "#"
+    - label: "View Project"
+      url: "/projects/pips/"
 
 - title: "Project Two"
   description: "Another interesting project you've worked on. Include what you learned and the impact it had."
